@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "name": "Cards",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CardNumber": {
+      "type": "biginteger"
+    },
+    "Cvv": {
+      "type": "integer"
+    },
+    "pin": {
+      "type": "integer"
+    },
+    "user": {
+      "via": "card",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "expiry": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -5,13 +5,12 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "strapi develop",
     "build": "strapi build",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
-    "@qidian99/strapi-plugin-graphql": "^3.1.8",
     "knex": "0.21.18",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
